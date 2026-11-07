@@ -1,0 +1,23 @@
+# 编译产物
+bin/
+obj/
+dist/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 运行期生成（正常在 %LOCALAPPDATA%\AoE4Auto\，这里只是兜底）
+frames/
+miss_*.png
+AoE4Auto.log
+AoE4Auto.ini
+AoE4Auto_Data/
+
+# 系统
+Thumbs.db
+desktop.ini
+.DS_Store

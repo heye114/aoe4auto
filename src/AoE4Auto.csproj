@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    用 Visual Studio 打开本文件即可编译（需要 VS 2019+ 的 .NET 桌面开发工作负载）。
+    如果只想编出 exe，直接跑同级目录的 build.ps1 更省事——那个只依赖系统自带的 csc.exe。
+
+    注意：目标是 .NET Framework 4.8，不是 .NET Core / .NET 5+。
+    代码是 C# 5 语法（用 Framework 自带的 csc.exe v4.0.30319 编译），别把 LangVersion 调高，
+    否则编译产物和 release 里的成品会有差异。
+  -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <AssemblyName>AOE4炼狱天赋点挂机</AssemblyName>
+    <RootNamespace>AoE4Auto</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+
+    <LangVersion>5</LangVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+</Project>
